@@ -1,12 +1,12 @@
 // Importing //
 const router = require('express').Router();
 const {
-  getThoughts, getSingleThought, createThought, updateThought, deleteThought, addReaction, removeReaction, }
+  getAllThoughts, createThought, getSingleThought, updateThought, deleteThought, addReaction, removeReaction, }
   = require('../../controllers/thoughtController');
 
 // Routes for getting all thoughts and creating a new thought. //
 router.route('/')
-.get(getThoughts) // Get all //
+.get(getAllThoughts) // Get all //
 .post(createThought); // Create //
 
 // Routes for getting a single thought, updating a thought, and deleting a thought. //

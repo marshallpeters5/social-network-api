@@ -6,7 +6,6 @@
   "scripts": {
     "watch": "nodemon",
     "start": "node server.js"
-    
   },
   "keywords": [],
   "author": "",

@@ -1,19 +1,18 @@
 // Importing //
 const router = require('express').Router();
 const {
-  createUser, getUsers, getSingleUser, updateUser, deleteUser, addFriend, removeFriend, } 
+    getAllUsers, createUser, getSingleUser, updateUser, deleteUser, addFriend, removeFriend, } 
   = require('../../controllers/userController');
 
 // Routes for getting all users and creating a new user. //
 router.route('/')
-.post(createUser) // Create //
-.get(getUsers); // Get all //
-
+.get(getAllUsers) // Get all //
+.post(createUser); // Create //
 
 // Routes for getting a single user, updating a user, and deleting a user. //
 router.route('/:userId')
-.put(updateUser) // Update //
 .get(getSingleUser) // Get one //
+.put(updateUser) // Update //
 .delete(deleteUser); // Delete // 
 
 // Routes for adding and removing a friend for a specific user. //
