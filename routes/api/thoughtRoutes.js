@@ -2,7 +2,7 @@
 const router = require('express').Router();
 const {
   getThoughts, getSingleThought, createThought, updateThought, deleteThought, addReaction, removeReaction, }
-  = require('../../controllers/thought-controller');
+  = require('../../controllers/thoughtController');
 
 // Routes for getting all thoughts and creating a new thought. //
 router.route('/')
